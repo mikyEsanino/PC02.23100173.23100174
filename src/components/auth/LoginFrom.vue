@@ -194,7 +194,7 @@ export default {
           message: `Bienvenido${data.user?.name ? `, ${data.user.name}` : ''}!`,
           position: 'bottom'
         })
-        this.$router.push('/')
+        this.$router.push('/main')
       } catch (error) {
         const apiMessage = error.response?.data?.message || 'Credenciales inválidas, intenta nuevamente.'
         this.$q.notify({
